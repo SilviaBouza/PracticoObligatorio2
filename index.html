@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form id="contactForm">
+        <label for="nombre">Nombre *:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellido">Apellido *:</label><br>
+        <input type="text" id="apellido" name="apellido"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="text" id="telefono" name="telefono"><br><br>
+
+        <label for="email">Email *:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="tipoContacto">Tipo de contacto *:</label><br>
+        <select id="tipoContacto" name="tipoContacto">
+            <option value="">Seleccione</option>
+            <option value="soporte">Soporte</option>
+            <option value="ventas">Ventas</option>
+        </select><br><br>
+
+        <label for="asunto">Asunto *:</label><br>
+        <input type="text" id="asunto" name="asunto"><br><br>
+
+        <label for="descripcion">Descripción *:</label><br>
+        <textarea id="descripcion" name="descripcion"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="mensaje"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
